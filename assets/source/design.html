@@ -11,15 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
   :root {
-    --panel: #0f1729;
-    --line: rgba(255, 255, 255, .09);
-    --text: #f4f6fb;
-    --muted: #a7b3c6;
-    --faint: #7a889e;
-    --amber: #ffb86b;
-    --coral: #ff8a70;
-    --teal: #4fd1c5;
-    --lilac: #b4a7f5;
+    --panel: #ffffff;
+    --line: #e3e8f0;
+    --text: #141a26;
+    --muted: #4c5769;
+    --faint: #7b8698;
+    --amber: #c4761a;
+    --coral: #d9573d;
+    --teal: #0e8f82;
+    --lilac: #6a5ad0;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { background: transparent; }
@@ -31,14 +31,15 @@
   .hero {
     position: relative; width: 880px; height: 176px; overflow: hidden; border-radius: 15px;
     background:
-      radial-gradient(52% 130% at 92% 0%, rgba(255, 138, 112, .24), transparent 62%),
-      radial-gradient(44% 120% at 72% 118%, rgba(79, 209, 197, .17), transparent 62%),
-      linear-gradient(120deg, #0a0f1d, #10182c);
+      radial-gradient(52% 130% at 94% 0%, rgba(255, 171, 140, .42), transparent 62%),
+      radial-gradient(44% 125% at 70% 120%, rgba(120, 222, 206, .36), transparent 62%),
+      radial-gradient(38% 120% at 102% 104%, rgba(176, 164, 245, .34), transparent 64%),
+      linear-gradient(120deg, #ffffff, #fbfcfe);
     box-shadow: inset 0 0 0 1px var(--line);
   }
   .grid {
     position: absolute; inset: 0;
-    background-image: radial-gradient(rgba(255, 255, 255, .13) 1px, transparent 1.3px);
+    background-image: radial-gradient(rgba(40, 55, 85, .17) 1px, transparent 1.3px);
     background-size: 18px 18px;
     -webkit-mask-image: linear-gradient(100deg, transparent 58%, #000 92%);
   }
@@ -56,7 +57,7 @@
   .strip {
     display: flex; align-items: center; width: 420px; overflow: hidden; border-radius: 14px;
     background:
-      radial-gradient(60% 150% at 100% 50%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+      radial-gradient(60% 150% at 100% 50%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
       var(--panel);
     box-shadow: inset 0 0 0 1px var(--line);
   }
@@ -78,7 +79,7 @@
     display: grid; grid-template-columns: repeat(3, auto); gap: 9px 26px;
     margin-left: auto; list-style: none;
   }
-  .interests li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; line-height: 1; color: #d3dbe7; white-space: nowrap; }
+  .interests li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; line-height: 1; color: #364153; white-space: nowrap; }
   .interests li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--dot); }
 
   /* Profile links */
@@ -194,7 +195,7 @@
   const svg = document.getElementById('orbits');
   const NS = 'http://www.w3.org/2000/svg';
   const centre = { x: 736, y: 88 };
-  const colours = { amber: '#ffb86b', coral: '#ff8a70', teal: '#4fd1c5', lilac: '#b4a7f5', white: '#e8edf5' };
+  const colours = { amber: '#e0902f', coral: '#e2664b', teal: '#16a394', lilac: '#7c6be0', white: '#94a1b5' };
   const rings = [44, 80, 122, 176];
   const nodes = [
     [0, 205, 'amber', 2.6], [0, 60, 'white', 2],
@@ -215,21 +216,21 @@
 
   rings.forEach((radius, index) => add('circle', {
     cx: centre.x, cy: centre.y, r: radius, fill: 'none',
-    stroke: 'rgba(255,255,255,.14)', 'stroke-width': 1,
+    stroke: 'rgba(40,55,85,.2)', 'stroke-width': 1,
     'stroke-dasharray': index % 2 ? '2 6' : 'none',
   }));
   nodes.forEach(([ring, degrees, colour]) => {
     const end = point(rings[ring], degrees);
-    add('line', { x1: centre.x, y1: centre.y, x2: end.x, y2: end.y, stroke: colours[colour], 'stroke-opacity': .24, 'stroke-width': 1 });
+    add('line', { x1: centre.x, y1: centre.y, x2: end.x, y2: end.y, stroke: colours[colour], 'stroke-opacity': .38, 'stroke-width': 1 });
   });
   nodes.forEach(([ring, degrees, colour, size]) => {
     const spot = point(rings[ring], degrees);
-    add('circle', { cx: spot.x, cy: spot.y, r: size * 3, fill: colours[colour], opacity: .13 });
+    add('circle', { cx: spot.x, cy: spot.y, r: size * 3, fill: colours[colour], opacity: .16 });
     add('circle', { cx: spot.x, cy: spot.y, r: size, fill: colours[colour] });
   });
-  add('circle', { cx: centre.x, cy: centre.y, r: 20, fill: '#ffb86b', opacity: .12 });
-  add('circle', { cx: centre.x, cy: centre.y, r: 11, fill: '#ffb86b', opacity: .22 });
-  add('circle', { cx: centre.x, cy: centre.y, r: 5, fill: '#ffd9a8' });
+  add('circle', { cx: centre.x, cy: centre.y, r: 20, fill: '#e0902f', opacity: .13 });
+  add('circle', { cx: centre.x, cy: centre.y, r: 11, fill: '#e0902f', opacity: .24 });
+  add('circle', { cx: centre.x, cy: centre.y, r: 5, fill: '#e0902f' });
 </script>
 </body>
 </html>
