@@ -220,16 +220,16 @@ def wrap(title):
     return [first, shorten(rest, LINE_LENGTH)]
 
 
-def frame(width, accent, body):
+def frame(width, accent, body, height=ROW_HEIGHT):
     gradient = (
         f'<radialGradient id="tint" cx="1" cy=".5" r=".75">'
         f'<stop offset="0" stop-color="{accent}" stop-opacity=".12"/>'
         f'<stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient>'
     )
-    box = f'x=".5" y=".5" width="{width - 1}" height="{ROW_HEIGHT - 1}" rx="14"'
+    box = f'x=".5" y=".5" width="{width - 1}" height="{height - 1}" rx="14"'
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{ROW_HEIGHT}" '
-        f'viewBox="0 0 {width} {ROW_HEIGHT}">\n<defs>{gradient}</defs>\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}">\n<defs>{gradient}</defs>\n'
         f'<rect {box} fill="#fff"/><rect {box} fill="url(#tint)" stroke="#e3e8f0"/>\n{body}\n</svg>\n'
     )
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="84" viewBox="0 0 400 84">
+<defs><radialGradient id="tint" cx="1" cy=".5" r=".75"><stop offset="0" stop-color="#5546c0" stop-opacity=".12"/><stop offset="1" stop-color="#5546c0" stop-opacity="0"/></radialGradient></defs>
+<rect x=".5" y=".5" width="399" height="83" rx="14" fill="#fff"/><rect x=".5" y=".5" width="399" height="83" rx="14" fill="url(#tint)" stroke="#e3e8f0"/>
+<rect x="14" y="21" width="42" height="42" rx="9" fill="#5546c0" fill-opacity=".13"/>
+<g transform="translate(22 29) scale(.76)" fill="none" stroke="#5546c0" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9l-8 8 8 8"/><path d="M22 9l8 8-8 8"/><path d="M19.500 6l-5 22"/></g>
+<text x="68" y="38" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="600" fill="#0f1521">Kubernetes_Research_V1</text>
+<text x="386" y="37" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="10.500" font-weight="600" fill="#5546c0">Research</text>
+<text x="68" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.500" fill="#283344">Multi-cluster pod scheduling with data residency</text>
+</svg>

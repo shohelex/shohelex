@@ -6,7 +6,8 @@
 <!--
   Source for the images in ../ . Each section renders on its own through its URL hash,
   for example design.html#hero, at 2x with a transparent page background:
-    hero 880x176, interests 880x96, each link 420x46, each card 420x88
+    hero 880x176, interests 880x96, each link 420x46
+  Project and paper cards are not here: scripts/update_projects.py and update_papers.py write them.
 -->
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
@@ -88,16 +89,6 @@
   .link strong { font: 600 14px/1 Inter, sans-serif; color: var(--text); }
   .link small { font: 400 11px/1 "JetBrains Mono", monospace; color: var(--faint); }
   .link .go { margin-left: auto; font: 500 16px/1 Inter, sans-serif; color: var(--accent); }
-
-  /* Project cards */
-  .card { gap: 13px; height: 88px; padding: 0 18px 0 16px; }
-  .card .mark { width: 42px; height: 42px; }
-  .card .mark svg { width: 26px; height: 26px; }
-  .card .body { flex: 1; min-width: 0; }
-  .card .title { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-  .card h2 { font: 500 15.5px/1.2 "JetBrains Mono", monospace; letter-spacing: -.02em; color: var(--text); }
-  .card .kind { font: 500 10.5px/1 "JetBrains Mono", monospace; color: var(--accent); white-space: nowrap; }
-  .card .desc { margin-top: 7px; font-size: 13px; line-height: 1.3; color: var(--muted); white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -146,46 +137,6 @@
     <strong>ResearchGate</strong><small>Research profile</small>
     <span class="go">↗</span>
   </div>
-</section>
-
-<section id="card-avoid-desk-rejection">
-  <article class="strip card" style="--accent: var(--amber)">
-    <span class="mark"><svg viewBox="0 0 34 34"><path d="M8 3h13l6 6v22H8z"/><path d="M21 3v6h6"/><path d="M12.500 20l3.500 3.500 6.500-7"/></svg></span>
-    <div class="body">
-      <div class="title"><h2>avoid-desk-rejection</h2><span class="kind">Claude Code plugin</span></div>
-      <p class="desc">Screens a manuscript the way a journal editor does</p>
-    </div>
-  </article>
-</section>
-
-<section id="card-latex-sidekick">
-  <article class="strip card" style="--accent: var(--teal)">
-    <span class="mark"><svg viewBox="0 0 34 34"><path d="M12 4c-4 0-4 2-4 5v4c0 2.500-1 4-3.500 4C7 17 8 18.500 8 21v4c0 3 0 5 4 5"/><path d="M22 4c4 0 4 2 4 5v4c0 2.500 1 4 3.500 4-2.500 0-3.500 1.500-3.500 4v4c0 3 0 5-4 5"/><path d="M13.500 12h7M17 12v10"/></svg></span>
-    <div class="body">
-      <div class="title"><h2>latex-sidekick</h2><span class="kind">VS Code extension</span></div>
-      <p class="desc">LaTeX papers like Overleaf, on your own machine</p>
-    </div>
-  </article>
-</section>
-
-<section id="card-duplex-guard">
-  <article class="strip card" style="--accent: var(--coral)">
-    <span class="mark"><svg viewBox="0 0 34 34"><path d="M6 8h15v22H6z"/><path d="M12 8V4h16v22h-7"/><path d="M10 15h7M10 20h7"/></svg></span>
-    <div class="body">
-      <div class="title"><h2>duplex-guard</h2><span class="kind">Windows tool</span></div>
-      <p class="desc">Reliable 2-sided printing on Windows from any app</p>
-    </div>
-  </article>
-</section>
-
-<section id="card-spectra-federated-backdoor">
-  <article class="strip card" style="--accent: var(--lilac)">
-    <span class="mark"><svg viewBox="0 0 34 34"><path d="M2 17c3-12 6-12 9 0s6 12 9 0 6-12 12-4"/><path d="M2 29h30" opacity=".5"/></svg></span>
-    <div class="body">
-      <div class="title"><h2>spectra-federated-backdoor</h2><span class="kind">Research</span></div>
-      <p class="desc">PPO-driven backdoor attack on federated learning</p>
-    </div>
-  </article>
 </section>
 
 <script>

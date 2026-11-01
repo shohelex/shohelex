@@ -1,0 +1,28 @@
+{
+  "limit": 6,
+  "skip": [
+    "shohelex"
+  ],
+  "text": {
+    "avoid-desk-rejection": {
+      "kind": "Claude Code plugin",
+      "description": "Screens a manuscript the way a journal editor does"
+    },
+    "latex-sidekick": {
+      "kind": "VS Code extension",
+      "description": "LaTeX papers like Overleaf, on your own machine"
+    },
+    "duplex-guard": {
+      "kind": "Windows tool",
+      "description": "Reliable 2-sided printing on Windows from any app"
+    },
+    "spectra-federated-backdoor": {
+      "kind": "Research",
+      "description": "PPO-driven backdoor attack on federated learning"
+    },
+    "Kubernetes_Research_V1": {
+      "kind": "Research",
+      "description": "Multi-cluster pod scheduling with data residency"
+    }
+  }
+}

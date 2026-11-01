@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="84" viewBox="0 0 400 84">
+<defs><radialGradient id="tint" cx="1" cy=".5" r=".75"><stop offset="0" stop-color="#c2442b" stop-opacity=".12"/><stop offset="1" stop-color="#c2442b" stop-opacity="0"/></radialGradient></defs>
+<rect x=".5" y=".5" width="399" height="83" rx="14" fill="#fff"/><rect x=".5" y=".5" width="399" height="83" rx="14" fill="url(#tint)" stroke="#e3e8f0"/>
+<rect x="14" y="21" width="42" height="42" rx="9" fill="#c2442b" fill-opacity=".13"/>
+<g transform="translate(22 29) scale(.76)" fill="none" stroke="#c2442b" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-4 0-4 2-4 5v4c0 2.500-1 4-3.500 4C7 17 8 18.500 8 21v4c0 3 0 5 4 5"/><path d="M22 4c4 0 4 2 4 5v4c0 2.500 1 4 3.500 4-2.500 0-3.500 1.500-3.500 4v4c0 3 0 5-4 5"/><path d="M13.500 12h7M17 12v10"/></g>
+<text x="68" y="38" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="15" font-weight="600" fill="#0f1521">latex-sidekick</text>
+<text x="386" y="37" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="10.500" font-weight="600" fill="#c2442b">VS Code extension</text>
+<text x="68" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12.500" fill="#283344">LaTeX papers like Overleaf, on your own machine</text>
+</svg>

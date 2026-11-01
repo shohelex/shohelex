@@ -22,11 +22,17 @@
 </p>
 <!-- papers:end -->
 
+<!-- projects:start -->
 <p align="center">
-  <a href="https://github.com/shohelex/avoid-desk-rejection"><img src="assets/card-avoid-desk-rejection.png" width="400" alt="avoid-desk-rejection: a Claude Code plugin that screens a manuscript the way a journal editor does." /></a>
-  <a href="https://github.com/shohelex/latex-sidekick"><img src="assets/card-latex-sidekick.png" width="400" alt="latex-sidekick: a VS Code extension for writing LaTeX papers on your own machine." /></a>
-  <a href="https://github.com/shohelex/duplex-guard"><img src="assets/card-duplex-guard.png" width="400" alt="duplex-guard: reliable 2-sided printing on Windows from any app." /></a>
-  <a href="https://github.com/shohelex/spectra-federated-backdoor"><img src="assets/card-spectra-federated-backdoor.png" width="400" alt="spectra-federated-backdoor: a PPO-driven backdoor attack on federated learning." /></a>
+  <a href="https://github.com/shohelex/duplex-guard"><img src="assets/projects/duplex-guard.svg" width="400" alt="duplex-guard: Reliable 2-sided printing on Windows from any app" /></a>
+  <a href="https://github.com/shohelex/spectra-federated-backdoor"><img src="assets/projects/spectra-federated-backdoor.svg" width="400" alt="spectra-federated-backdoor: PPO-driven backdoor attack on federated learning" /></a>
+  <a href="https://github.com/shohelex/latex-sidekick"><img src="assets/projects/latex-sidekick.svg" width="400" alt="latex-sidekick: LaTeX papers like Overleaf, on your own machine" /></a>
+  <a href="https://github.com/shohelex/Kubernetes_Research_V1"><img src="assets/projects/kubernetes_research_v1.svg" width="400" alt="Kubernetes_Research_V1: Multi-cluster pod scheduling with data residency" /></a>
+  <a href="https://github.com/shohelex/avoid-desk-rejection"><img src="assets/projects/avoid-desk-rejection.svg" width="400" alt="avoid-desk-rejection: Screens a manuscript the way a journal editor does" /></a>
+</p>
+<!-- projects:end -->
+
+<p align="center">
   <img src="https://streak-stats.demolab.com/?user=shohelex&background=FFFFFF&border=E3E8F0&stroke=E3E8F0&ring=E0902F&fire=C2442B&currStreakLabel=A8620F&currStreakNum=0F1521&sideNums=0F1521&sideLabels=1F2937&dates=4F5B70&border_radius=16&card_width=880&card_height=170&disable_animations=true" width="804" alt="GitHub contribution streak" />
 </p>
 
