@@ -1,9 +1,11 @@
+<!-- identity:start -->
 <p align="center">
-  <img src="assets/hero.png" width="804" alt="Hi, I'm Md Shohel Khan. PhD student at Bangladesh University of Engineering and Technology and Technical Advisor at Asian Trade Corporation." />
-  <img src="assets/interests.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture, Federated Learning, Kubernetes, Research Tools." />
-  <a href="https://scholar.google.com/citations?user=6rIIH8IAAAAJ&hl=en"><img src="assets/link-scholar.png" width="400" alt="Google Scholar: publications and citations" /></a>
-  <a href="https://www.researchgate.net/profile/Md-Khan-115"><img src="assets/link-researchgate.png" width="400" alt="ResearchGate: research profile" /></a>
+  <img src="assets/identity/hero-2a363a3605.png" width="804" alt="Md Shohel Khan. PhD student at Bangladesh University of Engineering and Technology and Technical Advisor at Asian Trade Corporation" />
+  <img src="assets/identity/interests-d1e23cbbb6.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture, Federated Learning, Kubernetes, Research Tools." />
+  <a href="https://scholar.google.com/citations?user=6rIIH8IAAAAJ&amp;hl=en"><img src="assets/identity/link-1-b27713a9d2.png" width="400" alt="Google Scholar: Publications and citations" /></a>
+  <a href="https://www.researchgate.net/profile/Md-Khan-115"><img src="assets/identity/link-2-e9c8ba8435.png" width="400" alt="ResearchGate: Research profile" /></a>
 </p>
+<!-- identity:end -->
 
 <h3 align="center">Publications</h3>
 
@@ -36,9 +38,11 @@
   <img src="https://streak-stats.demolab.com/?user=shohelex&background=FFFFFF&border=E3E8F0&stroke=E3E8F0&ring=E0902F&fire=C2442B&currStreakLabel=A8620F&currStreakNum=0F1521&sideNums=0F1521&sideLabels=1F2937&dates=4F5B70&border_radius=16&card_width=880&card_height=170&disable_animations=true" width="804" alt="GitHub contribution streak" />
 </p>
 
+<!-- contact:start -->
 <p align="center">
   For any query, please contact <a href="mailto:shohel.expo@gmail.com">shohel.expo@gmail.com</a> &nbsp;·&nbsp; <a href="mailto:shoheleas@gmail.com">shoheleas@gmail.com</a>
 </p>
+<!-- contact:end -->
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=shohelex&label=profile%20views&color=c2442b&style=flat-square" alt="Profile views" />

@@ -1,0 +1,40 @@
+{
+  "greeting": "Hi 👋, I'm",
+  "name": "Md Shohel Khan",
+  "roles": [
+    "PhD student at Bangladesh University of Engineering and Technology",
+    "Technical Advisor at Asian Trade Corporation"
+  ],
+  "interests": [
+    "Cloud Computing",
+    "Distributed Systems",
+    "Security and Privacy",
+    "Intrusion Detection System",
+    "Agentic AI",
+    "Microservice Architecture",
+    "Federated Learning",
+    "Kubernetes",
+    "Research Tools"
+  ],
+  "links": [
+    {
+      "label": "Google Scholar",
+      "note": "Publications and citations",
+      "url": "https://scholar.google.com/citations?user=6rIIH8IAAAAJ&hl=en",
+      "mark": "cap"
+    },
+    {
+      "label": "ResearchGate",
+      "note": "Research profile",
+      "url": "https://www.researchgate.net/profile/Md-Khan-115",
+      "mark": "RG"
+    }
+  ],
+  "contact": {
+    "line": "For any query, please contact",
+    "emails": [
+      "shohel.expo@gmail.com",
+      "shoheleas@gmail.com"
+    ]
+  }
+}
