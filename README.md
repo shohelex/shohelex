@@ -17,10 +17,6 @@
 <!-- papers:end -->
 
 <p align="center">
-  <a href="https://github.com/shohelex/shohelex/actions/workflows/update-papers.yml"><img src="assets/button-update.png" width="156" alt="Update papers" /></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/shohelex/avoid-desk-rejection"><img src="assets/card-avoid-desk-rejection.png" width="400" alt="avoid-desk-rejection: a Claude Code plugin that screens a manuscript the way a journal editor does." /></a>
   <a href="https://github.com/shohelex/latex-sidekick"><img src="assets/card-latex-sidekick.png" width="400" alt="latex-sidekick: a VS Code extension for writing LaTeX papers on your own machine." /></a>
   <a href="https://github.com/shohelex/duplex-guard"><img src="assets/card-duplex-guard.png" width="400" alt="duplex-guard: reliable 2-sided printing on Windows from any app." /></a>
