@@ -1,0 +1,35 @@
+{
+  "papers": [
+    {
+      "title": "A framework for checking and mitigating the security vulnerabilities of cloud service RESTful APIs",
+      "venue": "Service Oriented Computing and Applications 19 (3), 187-208",
+      "year": 2025,
+      "link": "https://link.springer.com/article/10.1007/s11761-024-00404-z",
+      "pdf": "https://www.researchgate.net/profile/Md-Khan-115/publication/380975136_A_framework_for_checking_and_mitigating_the_security_vulnerabilities_of_cloud_service_RESTful_APIs/links/66ab1f344433ad480e8a1305/A-framework-for-checking-and-mitigating-the-security-vulnerabilities-of-cloud-service-RESTful-APIs.pdf"
+    },
+    {
+      "title": "A survey on android security: development and deployment hindrance and best practices",
+      "venue": "TELKOMNIKA (Telecommunication Computing Electronics and Control) 18 (1), 485-499",
+      "year": 2020,
+      "link": "https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/view/13288",
+      "pdf": "https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/13288/7567"
+    },
+    {
+      "title": "Prediction of Dengue Infected Areas using A Novel Blockchain based Crowdsourcing Framework",
+      "venue": "2020 11th IEEE Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON)",
+      "year": 2020,
+      "link": "https://ieeexplore.ieee.org/abstract/document/9298036/",
+      "pdf": "https://www.researchgate.net/profile/Md-Khan-115/publication/347978311_Prediction_of_Dengue_Infected_Areas_using_A_Novel_Blockchain_based_Crowdsourcing_Framework/links/601a2f16a6fdcc37a8fc2877/Prediction-of-Dengue-Infected-Areas-using-A-Novel-Blockchain-based-Crowdsourcing-Framework.pdf"
+    },
+    {
+      "title": "A Hybrid Approach for Synchronizing Clocks in Distributed Systems",
+      "venue": "International Conference on Cloud Computing, 271-286",
+      "year": 2019,
+      "link": "https://link.springer.com/chapter/10.1007/978-3-030-23502-4_19"
+    }
+  ],
+  "skip": [
+    "Heterogeneous Resource Allocation in Shared Datacenters",
+    "Buraq: A Fast Pod Scheduling Framework for Multi-Cluster Kubernetes with Hard Privacy and Residency Gates"
+  ]
+}

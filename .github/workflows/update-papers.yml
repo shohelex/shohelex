@@ -1,0 +1,47 @@
+name: Update papers
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Optional, add a paper by hand: title"
+        required: false
+      link:
+        description: "Optional: link to read it"
+        required: false
+      venue:
+        description: "Optional: journal or conference"
+        required: false
+      year:
+        description: "Optional: year"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update the list
+        env:
+          PAPER_TITLE: ${{ inputs.title }}
+          PAPER_LINK: ${{ inputs.link }}
+          PAPER_VENUE: ${{ inputs.venue }}
+          PAPER_YEAR: ${{ inputs.year }}
+        run: python3 scripts/update_papers.py
+
+      - name: Save any change
+        run: |
+          git add README.md papers.json
+          if git diff --cached --quiet; then
+            echo "Nothing to save."
+            exit 0
+          fi
+          git config user.name shohelex
+          git config user.email 66155135+shohelex@users.noreply.github.com
+          git commit -m "Update papers"
+          git push
