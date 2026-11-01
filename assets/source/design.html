@@ -6,7 +6,7 @@
 <!--
   Source for the images in ../ . Each section renders on its own through its URL hash,
   for example design.html#hero, at 2x with a transparent page background:
-    hero 880x176, each link 420x46, each card 420x88
+    hero 880x176, interests 880x74, each link 420x46, each card 420x88
 -->
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
@@ -69,6 +69,18 @@
     fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
   }
 
+  /* Research interests */
+  .interests { gap: 13px; width: 880px; height: 74px; padding: 0 26px 0 16px; border-radius: 15px; }
+  .interests .mark { width: 42px; height: 42px; }
+  .interests .mark svg { width: 26px; height: 26px; }
+  .interests strong { flex: none; font: 600 15px/1.25 Inter, sans-serif; color: var(--text); }
+  .interests ul {
+    display: grid; grid-template-columns: repeat(3, auto); gap: 9px 26px;
+    margin-left: auto; list-style: none;
+  }
+  .interests li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; line-height: 1; color: #d3dbe7; white-space: nowrap; }
+  .interests li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--dot); }
+
   /* Profile links */
   .link { gap: 10px; height: 46px; padding: 0 16px 0 10px; }
   .link .mark { width: 28px; height: 28px; }
@@ -100,6 +112,21 @@
       <p class="role">PhD student at Bangladesh University of Engineering and Technology</p>
       <p class="role">Technical Advisor at Asian Trade Corporation</p>
     </div>
+  </div>
+</section>
+
+<section id="interests">
+  <div class="strip interests" style="--accent: var(--lilac)">
+    <span class="mark"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="3.500"/><ellipse cx="17" cy="17" rx="14" ry="5.500"/><ellipse cx="17" cy="17" rx="14" ry="5.500" transform="rotate(60 17 17)"/><ellipse cx="17" cy="17" rx="14" ry="5.500" transform="rotate(120 17 17)"/></svg></span>
+    <strong>Research interests</strong>
+    <ul>
+      <li style="--dot: var(--amber)">Cloud Computing</li>
+      <li style="--dot: var(--teal)">Distributed Systems</li>
+      <li style="--dot: var(--coral)">Security and Privacy</li>
+      <li style="--dot: var(--lilac)">Intrusion Detection System</li>
+      <li style="--dot: var(--amber)">Agentic AI</li>
+      <li style="--dot: var(--teal)">Microservice Architecture</li>
+    </ul>
   </div>
 </section>
 
