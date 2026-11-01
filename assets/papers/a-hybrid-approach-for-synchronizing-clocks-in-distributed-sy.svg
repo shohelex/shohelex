@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="72" viewBox="0 0 712 72">
+<defs><radialGradient id="tint" cx="1" cy=".5" r=".75"><stop offset="0" stop-color="#a8620f" stop-opacity=".12"/><stop offset="1" stop-color="#a8620f" stop-opacity="0"/></radialGradient></defs>
+<rect x=".5" y=".5" width="711" height="71" rx="14" fill="#fff"/><rect x=".5" y=".5" width="711" height="71" rx="14" fill="url(#tint)" stroke="#e3e8f0"/>
+<rect x="14" y="15" width="48" height="42" rx="9" fill="#a8620f" fill-opacity=".13"/>
+<text x="38" y="41" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace" font-size="13" font-weight="600" fill="#a8620f">2019</text>
+<text x="76" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f1521">A Hybrid Approach for Synchronizing Clocks in Distributed Systems</text>
+<text x="76" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="12" fill="#4f5b70">International Conference on Cloud Computing, 271-286</text>
+</svg>

@@ -8,12 +8,18 @@
 <h3 align="center">Publications</h3>
 
 <!-- papers:start -->
-<ol>
-<li><a href="https://link.springer.com/article/10.1007/s11761-024-00404-z">A framework for checking and mitigating the security vulnerabilities of cloud service RESTful APIs</a><br /><sub>Service Oriented Computing and Applications 19 (3), 187-208 · 2025 · <a href="https://www.researchgate.net/profile/Md-Khan-115/publication/380975136_A_framework_for_checking_and_mitigating_the_security_vulnerabilities_of_cloud_service_RESTful_APIs/links/66ab1f344433ad480e8a1305/A-framework-for-checking-and-mitigating-the-security-vulnerabilities-of-cloud-service-RESTful-APIs.pdf">PDF</a></sub></li>
-<li><a href="https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/view/13288">A survey on android security: development and deployment hindrance and best practices</a><br /><sub>TELKOMNIKA (Telecommunication Computing Electronics and Control) 18 (1), 485-499 · 2020 · <a href="https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/13288/7567">PDF</a></sub></li>
-<li><a href="https://ieeexplore.ieee.org/abstract/document/9298036/">Prediction of Dengue Infected Areas using A Novel Blockchain based Crowdsourcing Framework</a><br /><sub>2020 11th IEEE Annual Ubiquitous Computing, Electronics &amp; Mobile Communication Conference (UEMCON) · 2020 · <a href="https://www.researchgate.net/profile/Md-Khan-115/publication/347978311_Prediction_of_Dengue_Infected_Areas_using_A_Novel_Blockchain_based_Crowdsourcing_Framework/links/601a2f16a6fdcc37a8fc2877/Prediction-of-Dengue-Infected-Areas-using-A-Novel-Blockchain-based-Crowdsourcing-Framework.pdf">PDF</a></sub></li>
-<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-23502-4_19">A Hybrid Approach for Synchronizing Clocks in Distributed Systems</a><br /><sub>International Conference on Cloud Computing, 271-286 · 2019</sub></li>
-</ol>
+<p align="center">
+  <a href="https://doi.org/10.2139/ssrn.7596989"><img src="assets/papers/buraq-a-fast-pod-scheduling-framework-for-multi-cluster-kube.svg" width="712" alt="Buraq: A Fast Pod Scheduling Framework for Multi-Cluster Kubernetes with Hard Privacy and Residency Gates. Preprint. SSRN. 2026" /></a>
+  <a href="https://doi.org/10.2139/ssrn.7596989"><img src="assets/papers/read.svg" width="88" alt="Read" /></a>
+  <a href="https://link.springer.com/article/10.1007/s11761-024-00404-z"><img src="assets/papers/a-framework-for-checking-and-mitigating-the-security-vulnera.svg" width="712" alt="A framework for checking and mitigating the security vulnerabilities of cloud service RESTful APIs. Service Oriented Computing and Applications 19 (3), 187-208. 2025" /></a>
+  <a href="https://www.researchgate.net/profile/Md-Khan-115/publication/380975136_A_framework_for_checking_and_mitigating_the_security_vulnerabilities_of_cloud_service_RESTful_APIs/links/66ab1f344433ad480e8a1305/A-framework-for-checking-and-mitigating-the-security-vulnerabilities-of-cloud-service-RESTful-APIs.pdf"><img src="assets/papers/pdf.svg" width="88" alt="PDF" /></a>
+  <a href="https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/view/13288"><img src="assets/papers/a-survey-on-android-security-development-and-deployment-hind.svg" width="712" alt="A survey on android security: development and deployment hindrance and best practices. TELKOMNIKA (Telecommunication Computing Electronics and Control) 18 (1), 485-499. 2020" /></a>
+  <a href="https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/viewFile/13288/7567"><img src="assets/papers/pdf.svg" width="88" alt="PDF" /></a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/9298036/"><img src="assets/papers/prediction-of-dengue-infected-areas-using-a-novel-blockchain.svg" width="712" alt="Prediction of Dengue Infected Areas using A Novel Blockchain based Crowdsourcing Framework. 2020 11th IEEE Annual Ubiquitous Computing, Electronics &amp; Mobile Communication Conference (UEMCON). 2020" /></a>
+  <a href="https://www.researchgate.net/profile/Md-Khan-115/publication/347978311_Prediction_of_Dengue_Infected_Areas_using_A_Novel_Blockchain_based_Crowdsourcing_Framework/links/601a2f16a6fdcc37a8fc2877/Prediction-of-Dengue-Infected-Areas-using-A-Novel-Blockchain-based-Crowdsourcing-Framework.pdf"><img src="assets/papers/pdf.svg" width="88" alt="PDF" /></a>
+  <a href="https://link.springer.com/chapter/10.1007/978-3-030-23502-4_19"><img src="assets/papers/a-hybrid-approach-for-synchronizing-clocks-in-distributed-sy.svg" width="712" alt="A Hybrid Approach for Synchronizing Clocks in Distributed Systems. International Conference on Cloud Computing, 271-286. 2019" /></a>
+  <a href="https://link.springer.com/chapter/10.1007/978-3-030-23502-4_19"><img src="assets/papers/read.svg" width="88" alt="Read" /></a>
+</p>
 <!-- papers:end -->
 
 <p align="center">

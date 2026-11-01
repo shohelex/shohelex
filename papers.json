@@ -1,6 +1,13 @@
 {
   "papers": [
     {
+      "title": "Buraq: A Fast Pod Scheduling Framework for Multi-Cluster Kubernetes with Hard Privacy and Residency Gates",
+      "venue": "SSRN",
+      "year": 2026,
+      "link": "https://doi.org/10.2139/ssrn.7596989",
+      "preprint": true
+    },
+    {
       "title": "A framework for checking and mitigating the security vulnerabilities of cloud service RESTful APIs",
       "venue": "Service Oriented Computing and Applications 19 (3), 187-208",
       "year": 2025,
@@ -29,7 +36,6 @@
     }
   ],
   "skip": [
-    "Heterogeneous Resource Allocation in Shared Datacenters",
-    "Buraq: A Fast Pod Scheduling Framework for Multi-Cluster Kubernetes with Hard Privacy and Residency Gates"
+    "Heterogeneous Resource Allocation in Shared Datacenters"
   ]
 }

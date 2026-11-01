@@ -4,17 +4,31 @@ on:
   workflow_dispatch:
     inputs:
       title:
-        description: "Optional, add a paper by hand: title"
+        description: "Leave everything blank to look for new papers. To add or change a paper by hand, enter its title"
         required: false
       link:
-        description: "Optional: link to read it"
+        description: "Link to read it (needed for a new paper)"
+        required: false
+      pdf:
+        description: "Link to a free PDF"
         required: false
       venue:
-        description: "Optional: journal or conference"
+        description: "Journal or conference"
         required: false
       year:
-        description: "Optional: year"
+        description: "Year"
         required: false
+      preprint:
+        description: "Is it a preprint?"
+        type: choice
+        options:
+          - unchanged
+          - "yes"
+          - "no"
+        default: unchanged
+  push:
+    branches: [main]
+    paths: [papers.json]
 
 permissions:
   contents: write
@@ -30,13 +44,16 @@ jobs:
         env:
           PAPER_TITLE: ${{ inputs.title }}
           PAPER_LINK: ${{ inputs.link }}
+          PAPER_PDF: ${{ inputs.pdf }}
           PAPER_VENUE: ${{ inputs.venue }}
           PAPER_YEAR: ${{ inputs.year }}
+          PAPER_PREPRINT: ${{ inputs.preprint }}
+          RENDER_ONLY: ${{ github.event_name == 'push' }}
         run: python3 scripts/update_papers.py
 
       - name: Save any change
         run: |
-          git add README.md papers.json
+          git add README.md papers.json assets/papers
           if git diff --cached --quiet; then
             echo "Nothing to save."
             exit 0
