@@ -1,6 +1,6 @@
 <p align="center">
   <img src="assets/hero.png" width="804" alt="Hi, I'm Md Shohel Khan. PhD student at Bangladesh University of Engineering and Technology and Technical Advisor at Asian Trade Corporation." />
-  <img src="assets/interests.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture." />
+  <img src="assets/interests.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture, Federated Learning, Kubernetes, Research Tools." />
   <a href="https://scholar.google.com/citations?user=6rIIH8IAAAAJ&hl=en"><img src="assets/link-scholar.png" width="400" alt="Google Scholar: publications and citations" /></a>
   <a href="https://www.researchgate.net/profile/Md-Khan-115"><img src="assets/link-researchgate.png" width="400" alt="ResearchGate: research profile" /></a>
   <a href="https://github.com/shohelex/avoid-desk-rejection"><img src="assets/card-avoid-desk-rejection.png" width="400" alt="avoid-desk-rejection: a Claude Code plugin that screens a manuscript the way a journal editor does." /></a>
