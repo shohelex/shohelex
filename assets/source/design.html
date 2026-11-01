@@ -6,17 +6,16 @@
 <!--
   Source for the images in ../ . Each section renders on its own through its URL hash,
   for example design.html#hero, at 2x with a transparent page background:
-    hero 880x300, each card 420x196
+    hero 880x176, each link 420x46, each card 420x88
 -->
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
   :root {
-    --ink: #0b1120;
     --panel: #0f1729;
     --line: rgba(255, 255, 255, .09);
     --text: #f4f6fb;
     --muted: #a7b3c6;
-    --faint: #6b7a91;
+    --faint: #7a889e;
     --amber: #ffb86b;
     --coral: #ff8a70;
     --teal: #4fd1c5;
@@ -30,59 +29,63 @@
 
   /* Hero */
   .hero {
-    position: relative; width: 880px; height: 300px; overflow: hidden; border-radius: 20px;
+    position: relative; width: 880px; height: 176px; overflow: hidden; border-radius: 15px;
     background:
-      radial-gradient(58% 120% at 90% 0%, rgba(255, 138, 112, .24), transparent 62%),
-      radial-gradient(48% 110% at 68% 112%, rgba(79, 209, 197, .17), transparent 62%),
+      radial-gradient(52% 130% at 92% 0%, rgba(255, 138, 112, .24), transparent 62%),
+      radial-gradient(44% 120% at 72% 118%, rgba(79, 209, 197, .17), transparent 62%),
       linear-gradient(120deg, #0a0f1d, #10182c);
     box-shadow: inset 0 0 0 1px var(--line);
   }
   .grid {
     position: absolute; inset: 0;
     background-image: radial-gradient(rgba(255, 255, 255, .13) 1px, transparent 1.3px);
-    background-size: 22px 22px;
-    -webkit-mask-image: linear-gradient(100deg, transparent 38%, #000 88%);
+    background-size: 18px 18px;
+    -webkit-mask-image: linear-gradient(100deg, transparent 58%, #000 92%);
   }
   #orbits {
-    position: absolute; inset: 0; width: 880px; height: 300px;
-    -webkit-mask-image: linear-gradient(90deg, transparent 44%, #000 72%);
+    position: absolute; inset: 0; width: 880px; height: 176px;
+    -webkit-mask-image: linear-gradient(90deg, transparent 57%, #000 76%);
   }
-  .copy { position: absolute; left: 46px; top: 50%; transform: translateY(-50%); }
-  .hello { font: 500 14px/1 "JetBrains Mono", monospace; color: var(--amber); word-spacing: -.22em; }
-  h1 {
-    margin-top: 12px; font: 400 74px/1 "Instrument Serif", serif;
-    letter-spacing: -.012em; color: var(--text);
-  }
-  .role { margin-top: 14px; font-size: 15.5px; line-height: 1.4; color: var(--muted); }
-  .role span { margin: 0 6px; color: var(--faint); }
-  .chips { display: flex; gap: 8px; margin-top: 20px; list-style: none; }
-  .chips li {
-    padding: 6px 11px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line);
-    background: rgba(255, 255, 255, .04);
-    font: 400 12px/1 "JetBrains Mono", monospace; color: #c9d3e2;
-  }
+  .copy { position: absolute; left: 32px; top: 50%; transform: translateY(-50%); }
+  .hello { font: 500 12px/1 "JetBrains Mono", monospace; color: var(--amber); word-spacing: -.22em; }
+  h1 { margin-top: 7px; font: 400 52px/1 "Instrument Serif", serif; letter-spacing: -.012em; color: var(--text); }
+  .role { margin-top: 10px; font-size: 14px; line-height: 1.3; color: var(--muted); }
+  .role + .role { margin-top: 3px; }
 
-  /* Project cards */
-  .card {
-    position: relative; display: flex; flex-direction: column; width: 420px; height: 196px;
-    padding: 24px 26px 22px; overflow: hidden; border-radius: 16px;
+  /* Shared strip used by links and project cards */
+  .strip {
+    display: flex; align-items: center; width: 420px; overflow: hidden; border-radius: 14px;
     background:
-      radial-gradient(70% 110% at 100% 0%, color-mix(in srgb, var(--accent) 17%, transparent), transparent 66%),
+      radial-gradient(60% 150% at 100% 50%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
       var(--panel);
     box-shadow: inset 0 0 0 1px var(--line);
   }
-  .card .kind { font: 500 12px/1 "JetBrains Mono", monospace; color: var(--accent); letter-spacing: .02em; }
-  .card h2 { margin-top: 14px; font: 500 20px/1.2 "JetBrains Mono", monospace; letter-spacing: -.02em; color: var(--text); }
-  .card .desc { margin-top: 9px; max-width: 352px; font-size: 14.5px; line-height: 1.5; color: var(--muted); }
-  .card .meta {
-    display: flex; align-items: center; gap: 7px; margin-top: auto;
-    font: 400 12px/1 "JetBrains Mono", monospace; color: var(--faint);
+  .mark {
+    display: grid; place-items: center; flex: none; border-radius: 9px;
+    background: color-mix(in srgb, var(--accent) 13%, transparent);
+    font: 500 11px/1 "JetBrains Mono", monospace; color: var(--accent);
   }
-  .card .meta i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
-  .card svg.icon {
-    position: absolute; top: 20px; right: 22px; width: 34px; height: 34px;
-    fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+  .mark svg {
+    fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
   }
+
+  /* Profile links */
+  .link { gap: 10px; height: 46px; padding: 0 16px 0 10px; }
+  .link .mark { width: 28px; height: 28px; }
+  .link .mark svg { width: 18px; height: 18px; }
+  .link strong { font: 600 14px/1 Inter, sans-serif; color: var(--text); }
+  .link small { font: 400 11px/1 "JetBrains Mono", monospace; color: var(--faint); }
+  .link .go { margin-left: auto; font: 500 16px/1 Inter, sans-serif; color: var(--accent); }
+
+  /* Project cards */
+  .card { gap: 13px; height: 88px; padding: 0 18px 0 16px; }
+  .card .mark { width: 42px; height: 42px; }
+  .card .mark svg { width: 26px; height: 26px; }
+  .card .body { flex: 1; min-width: 0; }
+  .card .title { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .card h2 { font: 500 15.5px/1.2 "JetBrains Mono", monospace; letter-spacing: -.02em; color: var(--text); }
+  .card .kind { font: 500 10.5px/1 "JetBrains Mono", monospace; color: var(--accent); white-space: nowrap; }
+  .card .desc { margin-top: 7px; font-size: 13px; line-height: 1.3; color: var(--muted); white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -90,57 +93,69 @@
 <section id="hero">
   <div class="hero">
     <div class="grid"></div>
-    <svg id="orbits" viewBox="0 0 880 300" aria-hidden="true"></svg>
+    <svg id="orbits" viewBox="0 0 880 176" aria-hidden="true"></svg>
     <div class="copy">
       <p class="hello">Hi 👋, I'm</p>
       <h1>Md Shohel Khan</h1>
-      <p class="role">Technical Advisor at Asian Trade Corporation<span>·</span>PhD student</p>
-      <ul class="chips">
-        <li>federated learning</li>
-        <li>kubernetes</li>
-        <li>research tools</li>
-      </ul>
+      <p class="role">PhD student at Bangladesh University of Engineering and Technology</p>
+      <p class="role">Technical Advisor at Asian Trade Corporation</p>
     </div>
   </div>
 </section>
 
+<section id="link-scholar">
+  <div class="strip link" style="--accent: var(--amber)">
+    <span class="mark"><svg viewBox="0 0 34 34"><path d="M2 13L17 6l15 7-15 7z"/><path d="M8 16.500V24c4 4 14 4 18 0v-7.500"/><path d="M32 13v8"/></svg></span>
+    <strong>Google Scholar</strong><small>Publications and citations</small>
+    <span class="go">↗</span>
+  </div>
+</section>
+
+<section id="link-researchgate">
+  <div class="strip link" style="--accent: var(--teal)">
+    <span class="mark">RG</span>
+    <strong>ResearchGate</strong><small>Research profile</small>
+    <span class="go">↗</span>
+  </div>
+</section>
+
 <section id="card-avoid-desk-rejection">
-  <article class="card" style="--accent: var(--amber)">
-    <svg class="icon" viewBox="0 0 34 34"><path d="M8 3h13l6 6v22H8z"/><path d="M21 3v6h6"/><path d="M12.5 20l3.5 3.5 6.5-7"/></svg>
-    <p class="kind">Claude Code plugin</p>
-    <h2>avoid-desk-rejection</h2>
-    <p class="desc">Screens your manuscript the way a journal editor does, before you submit it.</p>
-    <p class="meta"><i></i>97 tests</p>
+  <article class="strip card" style="--accent: var(--amber)">
+    <span class="mark"><svg viewBox="0 0 34 34"><path d="M8 3h13l6 6v22H8z"/><path d="M21 3v6h6"/><path d="M12.500 20l3.500 3.500 6.500-7"/></svg></span>
+    <div class="body">
+      <div class="title"><h2>avoid-desk-rejection</h2><span class="kind">Claude Code plugin</span></div>
+      <p class="desc">Screens a manuscript the way a journal editor does</p>
+    </div>
   </article>
 </section>
 
 <section id="card-latex-sidekick">
-  <article class="card" style="--accent: var(--teal)">
-    <svg class="icon" viewBox="0 0 34 34"><path d="M12 4c-4 0-4 2-4 5v4c0 2.500-1 4-3.500 4C7 17 8 18.500 8 21v4c0 3 0 5 4 5"/><path d="M22 4c4 0 4 2 4 5v4c0 2.500 1 4 3.500 4-2.500 0-3.500 1.500-3.500 4v4c0 3 0 5-4 5"/><path d="M13.500 12h7M17 12v10"/></svg>
-    <p class="kind">VS Code extension</p>
-    <h2>latex-sidekick</h2>
-    <p class="desc">Write LaTeX papers the way Overleaf does, but on your own machine.</p>
-    <p class="meta"><i></i>JavaScript</p>
+  <article class="strip card" style="--accent: var(--teal)">
+    <span class="mark"><svg viewBox="0 0 34 34"><path d="M12 4c-4 0-4 2-4 5v4c0 2.500-1 4-3.500 4C7 17 8 18.500 8 21v4c0 3 0 5 4 5"/><path d="M22 4c4 0 4 2 4 5v4c0 2.500 1 4 3.500 4-2.500 0-3.500 1.500-3.500 4v4c0 3 0 5-4 5"/><path d="M13.500 12h7M17 12v10"/></svg></span>
+    <div class="body">
+      <div class="title"><h2>latex-sidekick</h2><span class="kind">VS Code extension</span></div>
+      <p class="desc">LaTeX papers like Overleaf, on your own machine</p>
+    </div>
   </article>
 </section>
 
 <section id="card-duplex-guard">
-  <article class="card" style="--accent: var(--coral)">
-    <svg class="icon" viewBox="0 0 34 34"><path d="M6 8h15v22H6z"/><path d="M12 8V4h16v22h-7"/><path d="M10 15h7M10 20h7"/></svg>
-    <p class="kind">Windows tool</p>
-    <h2>duplex-guard</h2>
-    <p class="desc">Reliable 2-sided printing from any app. Stops the driver silently turning duplex off.</p>
-    <p class="meta"><i></i>Python</p>
+  <article class="strip card" style="--accent: var(--coral)">
+    <span class="mark"><svg viewBox="0 0 34 34"><path d="M6 8h15v22H6z"/><path d="M12 8V4h16v22h-7"/><path d="M10 15h7M10 20h7"/></svg></span>
+    <div class="body">
+      <div class="title"><h2>duplex-guard</h2><span class="kind">Windows tool</span></div>
+      <p class="desc">Reliable 2-sided printing on Windows from any app</p>
+    </div>
   </article>
 </section>
 
 <section id="card-spectra-federated-backdoor">
-  <article class="card" style="--accent: var(--lilac)">
-    <svg class="icon" viewBox="0 0 34 34"><path d="M2 17c3-12 6-12 9 0s6 12 9 0 6-12 12-4"/><path d="M2 29h30" opacity=".5"/></svg>
-    <p class="kind">Research</p>
-    <h2>spectra-federated-backdoor</h2>
-    <p class="desc">A PPO-driven backdoor attack on federated learning that evades robust aggregation defenses.</p>
-    <p class="meta"><i></i>Python</p>
+  <article class="strip card" style="--accent: var(--lilac)">
+    <span class="mark"><svg viewBox="0 0 34 34"><path d="M2 17c3-12 6-12 9 0s6 12 9 0 6-12 12-4"/><path d="M2 29h30" opacity=".5"/></svg></span>
+    <div class="body">
+      <div class="title"><h2>spectra-federated-backdoor</h2><span class="kind">Research</span></div>
+      <p class="desc">PPO-driven backdoor attack on federated learning</p>
+    </div>
   </article>
 </section>
 
@@ -148,14 +163,14 @@
   // Orbit motif: an aggregator with clients on rings. Fixed values, so every render matches.
   const svg = document.getElementById('orbits');
   const NS = 'http://www.w3.org/2000/svg';
-  const centre = { x: 716, y: 150 };
+  const centre = { x: 736, y: 88 };
   const colours = { amber: '#ffb86b', coral: '#ff8a70', teal: '#4fd1c5', lilac: '#b4a7f5', white: '#e8edf5' };
-  const rings = [58, 108, 166, 232];
+  const rings = [44, 80, 122, 176];
   const nodes = [
-    [0, 200, 'amber', 3.2], [0, 62, 'white', 2.4],
-    [1, 318, 'teal', 4], [1, 150, 'lilac', 3.2], [1, 96, 'white', 2.4],
-    [2, 38, 'coral', 4.6], [2, 236, 'amber', 3.4], [2, 128, 'teal', 3.2], [2, 176, 'white', 2.4],
-    [3, 332, 'white', 2.6], [3, 204, 'lilac', 3.6], [3, 150, 'coral', 3], [3, 28, 'teal', 3],
+    [0, 205, 'amber', 2.6], [0, 60, 'white', 2],
+    [1, 318, 'teal', 3.2], [1, 140, 'lilac', 2.8], [1, 56, 'coral', 2.4],
+    [2, 16, 'coral', 3.6], [2, 340, 'white', 2], [2, 198, 'amber', 2.8], [2, 160, 'teal', 2.6],
+    [3, 188, 'lilac', 2.8],
   ];
   const add = (name, attrs) => {
     const el = document.createElementNS(NS, name);
@@ -175,16 +190,16 @@
   }));
   nodes.forEach(([ring, degrees, colour]) => {
     const end = point(rings[ring], degrees);
-    add('line', { x1: centre.x, y1: centre.y, x2: end.x, y2: end.y, stroke: colours[colour], 'stroke-opacity': .22, 'stroke-width': 1 });
+    add('line', { x1: centre.x, y1: centre.y, x2: end.x, y2: end.y, stroke: colours[colour], 'stroke-opacity': .24, 'stroke-width': 1 });
   });
   nodes.forEach(([ring, degrees, colour, size]) => {
     const spot = point(rings[ring], degrees);
     add('circle', { cx: spot.x, cy: spot.y, r: size * 3, fill: colours[colour], opacity: .13 });
     add('circle', { cx: spot.x, cy: spot.y, r: size, fill: colours[colour] });
   });
-  add('circle', { cx: centre.x, cy: centre.y, r: 26, fill: '#ffb86b', opacity: .12 });
-  add('circle', { cx: centre.x, cy: centre.y, r: 15, fill: '#ffb86b', opacity: .22 });
-  add('circle', { cx: centre.x, cy: centre.y, r: 7, fill: '#ffd9a8' });
+  add('circle', { cx: centre.x, cy: centre.y, r: 20, fill: '#ffb86b', opacity: .12 });
+  add('circle', { cx: centre.x, cy: centre.y, r: 11, fill: '#ffb86b', opacity: .22 });
+  add('circle', { cx: centre.x, cy: centre.y, r: 5, fill: '#ffd9a8' });
 </script>
 </body>
 </html>
