@@ -1,9 +1,9 @@
 <!-- identity:start -->
 <p align="center">
-  <img src="assets/identity/hero-2a363a3605.png" width="804" alt="Md Shohel Khan. PhD student at Bangladesh University of Engineering and Technology and Technical Advisor at Asian Trade Corporation" />
-  <img src="assets/identity/interests-d1e23cbbb6.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture, Federated Learning, Kubernetes, Research Tools." />
-  <a href="https://scholar.google.com/citations?user=6rIIH8IAAAAJ&amp;hl=en"><img src="assets/identity/link-1-b27713a9d2.png" width="400" alt="Google Scholar: Publications and citations" /></a>
-  <a href="https://www.researchgate.net/profile/Md-Khan-115"><img src="assets/identity/link-2-e9c8ba8435.png" width="400" alt="ResearchGate: Research profile" /></a>
+  <img src="assets/identity/hero-31a5b2954a.png" width="804" alt="Md Shohel Khan. PhD student at Bangladesh University of Engineering and Technology and Technical Advisor at Asian Trade Corporation" />
+  <img src="assets/identity/interests-6f80396293.png" width="804" alt="Research interests: Cloud Computing, Distributed Systems, Security and Privacy, Intrusion Detection System, Agentic AI, Microservice Architecture, Federated Learning, Kubernetes, Research Tools." />
+  <a href="https://scholar.google.com/citations?user=6rIIH8IAAAAJ&amp;hl=en"><img src="assets/identity/link-1-f83378b5f4.png" width="400" alt="Google Scholar: Publications and citations" /></a>
+  <a href="https://www.researchgate.net/profile/Md-Khan-115"><img src="assets/identity/link-2-0711c8d755.png" width="400" alt="ResearchGate: Research profile" /></a>
 </p>
 <!-- identity:end -->
 

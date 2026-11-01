@@ -9,7 +9,7 @@
   design.html#hero shows one section; with no hash, every section shows so all fonts load.
   Project and paper cards are not here: scripts/update_projects.py and update_papers.py write them.
 -->
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
 <style>
   :root {
     --panel: #ffffff;
@@ -50,7 +50,7 @@
   }
   .copy { position: absolute; left: 32px; top: 50%; transform: translateY(-50%); }
   .hello { font: 500 12px/1 "JetBrains Mono", monospace; color: var(--amber); word-spacing: -.22em; }
-  h1 { margin-top: 7px; font: 400 52px/1 "Instrument Serif", serif; letter-spacing: -.012em; color: var(--text); }
+  h1 { margin-top: 8px; font: 600 42px/1.05 Inter, sans-serif; letter-spacing: -.025em; color: var(--text); }
   .role { margin-top: 10px; font-size: 14.5px; font-weight: 500; line-height: 1.3; color: #1f2937; }
   .role + .role { margin-top: 3px; }
 
@@ -73,7 +73,7 @@
 
   /* Research interests */
   .interests { gap: 22px; width: 880px; min-height: 96px; padding: 14px 20px 14px 32px; border-radius: 15px; }
-  .interests strong { flex: none; font: 400 27px/1 "Instrument Serif", serif; color: var(--text); }
+  .interests strong { flex: none; font: 600 16px/1.25 Inter, sans-serif; letter-spacing: -.01em; color: var(--text); }
   .interests ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
   .interests li {
     padding: 8px 13px; border-radius: 999px;
@@ -210,7 +210,7 @@
     document.title = JSON.stringify({
       height: strip.offsetHeight,
       overflow: strip.scrollWidth > strip.clientWidth,
-      fonts: document.fonts.check('52px "Instrument Serif"') && document.fonts.check('600 14px Inter'),
+      fonts: document.fonts.check('600 42px Inter') && document.fonts.check('500 12px "JetBrains Mono"'),
     });
   });
 </script>
