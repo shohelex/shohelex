@@ -11,6 +11,8 @@
 
 <!-- papers:start -->
 <p align="center">
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128626009199"><img src="assets/papers/spectra-stealthy-ppo-enhanced-coordinated-trigger-attack-aga.svg" width="712" alt="SPeCTRA: Stealthy PPO-enhanced coordinated trigger attack against Robust Federated Aggregation. Computer Networks 292, 112907. 2027" /></a>
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128626009199"><img src="assets/papers/read.svg" width="88" alt="Read" /></a>
   <a href="https://doi.org/10.2139/ssrn.7596989"><img src="assets/papers/buraq-a-fast-pod-scheduling-framework-for-multi-cluster-kube.svg" width="712" alt="Buraq: A Fast Pod Scheduling Framework for Multi-Cluster Kubernetes with Hard Privacy and Residency Gates. Preprint. SSRN. 2026" /></a>
   <a href="https://doi.org/10.2139/ssrn.7596989"><img src="assets/papers/read.svg" width="88" alt="Read" /></a>
   <a href="https://link.springer.com/article/10.1007/s11761-024-00404-z"><img src="assets/papers/a-framework-for-checking-and-mitigating-the-security-vulnera.svg" width="712" alt="A framework for checking and mitigating the security vulnerabilities of cloud service RESTful APIs. Service Oriented Computing and Applications 19 (3), 187-208. 2025" /></a>

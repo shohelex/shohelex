@@ -33,6 +33,13 @@
       "venue": "International Conference on Cloud Computing, 271-286",
       "year": 2019,
       "link": "https://link.springer.com/chapter/10.1007/978-3-030-23502-4_19"
+    },
+    {
+      "title": "SPeCTRA: Stealthy PPO-enhanced coordinated trigger attack against Robust Federated Aggregation",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S1389128626009199",
+      "venue": "Computer Networks 292, 112907",
+      "year": 2027,
+      "preprint": false
     }
   ],
   "skip": [
