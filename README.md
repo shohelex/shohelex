@@ -28,6 +28,7 @@
 
 <!-- projects:start -->
 <p align="center">
+  <a href="https://github.com/shohelex/Accounted_Ingestion"><img src="assets/projects/accounted_ingestion.svg" width="400" alt="Accounted_Ingestion: Python project" /></a>
   <a href="https://github.com/shohelex/duplex-guard"><img src="assets/projects/duplex-guard.svg" width="400" alt="duplex-guard: Reliable 2-sided printing on Windows from any app" /></a>
   <a href="https://github.com/shohelex/spectra-federated-backdoor"><img src="assets/projects/spectra-federated-backdoor.svg" width="400" alt="spectra-federated-backdoor: PPO-driven backdoor attack on federated learning" /></a>
   <a href="https://github.com/shohelex/latex-sidekick"><img src="assets/projects/latex-sidekick.svg" width="400" alt="latex-sidekick: LaTeX papers like Overleaf, on your own machine" /></a>
